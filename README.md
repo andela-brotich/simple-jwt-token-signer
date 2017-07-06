@@ -30,11 +30,27 @@ edit claims object in `sign.js` to include the data to be signed
 npm run sign
 ```
 
-example output
+#### example output
 
-            = Token: ============================
+```bash
+$ npm run sign
+> jwt-creator@1.0.0 sign ./jwt-creator
+> node sign.js
 
-            eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJpZCI6Ii1LWEd5MU1UMW9pbWpRZ0ZpbTlNIiwiZW1haWwiOiJ0ZXN0LXVzZXItZmVsbG93QGFuZGVsYS5jb20iLCJmaXJzdF9uYW1lIjoiVGVzdCIsImxhc3RfbmFtZSI6IkZlbGxvdyIsIm5hbWUiOiJUZXN0IEZlbGxvdyIsInBpY3R1cmUiOiJodHRwczovL2xoNi5nb29nbGV1c2VyY29udGVudC5jb20vLVlha2dSWTBjZldvL0FBQUFBQUFBQUFJL0FBQUFBQUFBQUJVL1FkZGppdUo3SmRJL3Bob3RvLmpwZz9zej01MCIsInJvbGVzIjp7IkFuZGVsYW4iOiItS2lpaGZab3NlUWVxQzZiV1RhdSIsIkZlbGxvdyI6Ii1LWEd5MUVCMW9pbWpRZ0ZpbTZDIn19LCJpYXQiOjE0OTkzMjg0MDQsImV4cCI6MTUzMDg4NjAwNH0.KsMzL0gg6lr9gu-wm7cLC6Vr2Z-Ie-sTm1tbUPIwX_ba5-I4zci8O9thS--gINlqvwTR6IbszfgYwujfDHdyBtuou6cWJvSKL5hVHFizKY51AFHWlDz_tQDxvvVVpmdXra73IYpMO1AJq8lDjB2Im11RujrdOL48rHMV29jcAndZMyXGDBuurhWAIdWc7QrlFM-BB4ENIOgbMTm4UsX0q0EOCaEmOMBTP92p1_x6Pgaf-X8N48ffwpvLSwNkkAxikSz5FXYl18fabl8xt60BE_yMY0BaMZQ0Bwqch7HKyDfWU903mvklhjhADRZIFvF-ByXTv5JevonCTO3Zjth38g
+== Decoded Token: ============================
 
-            =======================================
+{ UserInfo:
+   { id: 'uuhfusbuhfb',
+     email: 'emial@example.com',
+     name: 'User Name',
+     picture: 'http://example.com',
+     roles: { rank: 'Student', level: '500' } },
+  iat: 1499332144,
+  exp: 1530889744 }
 
+== Token: ============================
+
+eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJpZCI6InV1aGZ1c2J1aGZiIiwiZW1haWwiOiJlbWlhbEBleGFtcGxlLmNvbSIsIm5hbWUiOiJVc2VyIE5hbWUiLCJwaWN0dXJlIjoiaHR0cDovL2V4YW1wbGUuY29tIiwicm9sZXMiOnsicmFuayI6IlN0dWRlbnQiLCJsZXZlbCI6IjUwMCJ9fSwiaWF0IjoxNDk5MzMyMTQ0LCJleHAiOjE1MzA4ODk3NDR9.MYyJ2O6OgFFuSjh0O-G-sSa0Bej9xwpB-6NHu_fS0kjWQjxEY3qA70BBjDlle95-0cFIpm3_jwhGYZdSbaIla2brgvOalfP8ppl1GwPzdRJG1eJCOoXBauzCbP--I5LlSl0IxMb_aH0yqZM1bIshEEJ0fCYre9eJLxpK3XM6dnl-ivnWiC_zGgd8N71AbfnKh-_ndRS9fjFu4BHlcSKIi7UhUHE2BcvI3ZTJYngcFIN4834irE5ux5zAz8shYWRsPTMkFNnQ6iaB0hagSXuZunirkvM9c6tpZGgjsKWCLOPMjlAwjiE6DMnoMUUXiFRZAwZP1UM2yEadrg2fO0EP0g
+
+=======================================
+```

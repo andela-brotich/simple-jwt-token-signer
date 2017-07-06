@@ -7,15 +7,13 @@ var cert = fs.readFileSync('certs/private-test.key');  // get private key
 // replace with cliam for the user
 var claims = {
   UserInfo: {
-    id: '-KXGy1MT1oimjQgFim9M',
-    email: 'test-user-fellow@andela.com',
-    first_name: 'Test',
-    last_name: 'Fellow',
-    name: 'Test Fellow',
-    picture: 'https://lh6.googleusercontent.com/-YakgRY0cfWo/AAAAAAAAAAI/AAAAAAAAABU/QddjiuJ7JdI/photo.jpg?sz=50',
+    id: 'uuhfusbuhfb',
+    email: 'emial@example.com',
+    name: 'User Name',
+    picture: 'http://example.com',
     roles: {
-      Andelan: '-KiihfZoseQeqC6bWTau',
-      Fellow: '-KXGy1EB1oimjQgFim6C'
+      rank: 'Student',
+      level: '500'
     }
   }
 };
@@ -25,6 +23,10 @@ var token = jwt.sign(claims, cert, {
   expiresIn: '1y'
 });
 
-console.log('== Token: ============================\n');
+var decodedToken = jwt.decode(token);
+
+console.log('== Decoded Token: ============================\n');
+console.log(decodedToken);
+console.log('\n== Token: ============================\n');
 console.log(token);
 console.log('\n=======================================\n');
