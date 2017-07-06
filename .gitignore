@@ -1,0 +1,11 @@
+node_modules
+.env
+.DS_Store
+npm-debug.log
+public/dist/*
+!public/dist/index.html
+public/temp/*
+!public/temp/index.html
+.idea/
+learning_map/d1_learning_map
+coverage/
