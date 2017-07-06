@@ -1,0 +1,13 @@
+{
+  "name": "jwt-creator",
+  "version": "1.0.0",
+  "description": "fake token creator",
+  "scripts": {
+    "sign": "node sign.js"
+  },
+  "author": "brian",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^7.4.1"
+  }
+}
