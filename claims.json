@@ -1,0 +1,12 @@
+{
+  "UserInfo": {
+    "id": "uuhfusbuhfb",
+    "email": "emial@example.com",
+    "name": "User Name",
+    "picture": "http://example.com",
+    "roles": {
+      "rank": "Student",
+      "level": "500"
+    }
+  }
+}
